@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <title>Disciplinas favoritas</title>
+  <style>
+    .full-height {
+      height: 100vh; /* Define a altura como 100% da altura da viewport */
+    }
+
+    .bg-secondary-custom {
+      background-color: #6c757d; /* Cor personalizada para bg-secondary */
+    }
+
+    .h100 {
+      height: 100px;
+    }
+
+    .h100 {
+      height: 100px;
+    }
+    
+    .h600 {
+      height: 600px;
+    }
+
+    .text-center-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Altura ajustada pelo pai */
+      text-align: center; /* Centraliza o texto horizontalmente */
+    }
+
+    .card-margin {
+      margin-bottom: 1.5rem; /* Margem inferior entre os cards */
+    }
+
+    .social-links a {
+      color: #ffffff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 bg-secondary bg-opacity-300 h100 d-flex justify-content-start align-items-center">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary-300">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Minhas Disciplinas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projetos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.instagram.com/luaninha.fsm/">Instagram</a></li>
+                    <li><a class="dropdown-item"
+                        href="https://www.linkedin.com/in/luana-morais-26458a308/">Linkedin</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://lattes.cnpq.br/4503077465983469">Currículo Lattes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-12 col-md- bg-light bg-opacity-300 full-height text-center-content">
+        <div>
+          <h2 class="mt-4">Luana Fabianne</h2>
+          <p class="lead text-dark">
+            Sou estudante do terceiro ano do curso integrado de Informática no IFRN e atualmente estagio na PGM -
+            Procuradoria Geral do Município.
+            Tenho interesse em seguir a carreira de Psicologia na faculdade, unindo meus conhecimentos em tecnologia com
+            uma paixão pelas ciências humanas.
+            Além disso, gosto de ler, fazer crochê e tocar instrumentos, hobbies que me permitem expressar minha
+            criatividade e relaxar nas horas livres.
+          </p>
+        </div>
+        <a href="#" class="btn btn-primary mb-3">Saiba Mais</a> <!-- mb: baixo, mt:cima, ml: esquerda, mr: direita-->
+      </div>
+
+      <div class="col-12 col-md-12 bg-dark bg-opacity-50 text-center h-100">
+        <div class="container"> 
+          <div class="row justify-content-center mt-5 ">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4 card-margin">
+              <div class="card">
+                <img src="redes.jpg" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                  <h5 class="card-title">Arquitetura de Redes</h5>
+                  <p class="card-text">É uma área fundamental da Tecnologia da Informação que se dedica ao planejamento, design e implementação de redes de computadores.
+                  Envolve o estudo de modelos de comunicação, protocolos, topologias e equipamentos de rede, além de aspectos críticos como endereçamento IP, segurança e otimização de desempenho. O objetivo é criar redes robustas e eficientes que garantam uma comunicação fluida e segura entre sistemas e dispositivos, atendendo às necessidades tanto de pequenas redes locais quanto de grandes infraestruturas corporativas.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4 card-margin">
+              <div class="card">
+                <img src="manutenção.jpg" class="card-img-top" alt="Imagem do Card 2">
+                <div class="card-body">
+                  <h5 class="card-title">Manutenção de Computadores</h5>
+                  <p class="card-text">Dedicada ao diagnóstico, reparo e otimização de sistemas de computação. Envolve a identificação e resolução de problemas relacionados a hardware e software, como a substituição de peças defeituosas, a instalação e atualização de sistemas e aplicativos, e a proteção contra vírus e malwares. Além disso, inclui práticas preventivas, como a limpeza física dos equipamentos, para garantir seu funcionamento eficiente e prolongar sua vida útil.
+                  A manutenção adequada é essencial para assegurar a operação confiável e o desempenho ideal dos computadores.</p>
+                  <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4 card-margin">
+              <div class="card">
+                <img src="pabd.jpg" class="card-img-top" alt="Imagem do Card 3">
+                <div class="card-body">
+                  <h5 class="card-title">Programação com Acesso a Banco de Dados</h5>
+                  <p class="card-text">Disciplina que foca no desenvolvimento de aplicações que interagem com bancos de dados para armazenar, consultar e gerenciar informações de forma eficiente.
+                  Ela abrange o uso de linguagens de programação e SQL (Structured Query Language) para criar, manipular e consultar dados em sistemas de gerenciamento de banco de dados (SGBD). Inclui a modelagem de dados, a implementação de operações CRUD (Create, Read, Update, Delete), e a otimização de consultas para garantir o desempenho e a integridade dos dados.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 bg-secondary bg-opacity-300 h100 text-center ">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="social-links d-flex justify-content-center">
+                <a href="https://facebook.com" target="_blank" title="Facebook" class="mx-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter" class="mx-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/luaninha.fsm/" target="_blank" title="Instagram" class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luana-morais-26458a308/" target="_blank" title="LinkedIn" class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+        <!-- Conteúdo da primeira coluna, agora com a cor de fundo da terceira -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

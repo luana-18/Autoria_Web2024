@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Disponíveis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #D7CCC8; /* Bege claro */
+        }
+        .navbar, footer {
+            background-color: #4E342E; /* Marrom escuro */
+        }
+        .navbar-brand, .nav-link, footer a {
+            color: white;
+        }
+        .btn-primary {
+            background-color: #795548; /* Marrom médio */
+            border-color: #795548;
+        }
+        .btn-primary:hover {
+            background-color: #4E342E; /* Marrom escuro */
+            border-color: #4E342E;
+        }
+        .btn-secondary {
+            background-color: #4E342E; /* Marrom escuro */
+            border-color: #4E342E;
+        }
+        .card {
+            background-color: #FFF;
+            border-color: #795548; /* Marrom médio */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Livraria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="livros.html">Livros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lista de Livros -->
+    <div class="container mt-5">
+        <h1 class="text-center">Livros Disponíveis</h1>
+        <div class="row mt-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sobrinh do mago.jpg" class="card-img-top" alt="Livro 1">
+                    <div class="card-body">
+                        <h5 class="card-title">O Sobrinho do Mago</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="leao feiticeira e o guarda roupa.jpg" class="card-img-top" alt="Livro 2">
+                    <div class="card-body">
+                        <h5 class="card-title">O Leão, a Feiticeira e o Guarda-roupa</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cavalo e seu menino.jpg" class="card-img-top" alt="Livro 3">
+                    <div class="card-body">
+                        <h5 class="card-title">O Cavalo e seu Menino</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 (Novo) -->
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="principe caspian.jpg" class="card-img-top" alt="Livro 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Príncipe Caspian</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 (Novo) -->
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="cadeira de prata.jpg" class="card-img-top" alt="Livro 5">
+                    <div class="card-body">
+                        <h5 class="card-title">A Cadeira de prata</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 (Novo) -->
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="a ultima batalha.jpg" class="card-img-top" alt="Livro 6">
+                    <div class="card-body">
+                        <h5 class="card-title">A Última Batalha</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário para sugerir novos livros -->
+    <div class="container mt-5">
+        <h2 class="text-center">Sugira um Novo Livro</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="nomeLivro" class="form-label">Nome do Livro</label>
+                <input type="text" class="form-control" id="nomeLivro" placeholder="Digite o nome do livro">
+            </div>
+            <div class="mb-3">
+                <label for="autorLivro" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="autorLivro" placeholder="Digite o nome do autor">
+            </div>
+            <div class="mb-3">
+                <label for="descricaoLivro" class="form-label">Descrição</label>
+                <textarea class="form-control" id="descricaoLivro" rows="3" placeholder="Descrição breve do livro"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Sugestão</button>
+        </form>
+    </div>
+
+    <!-- Botão para voltar à página principal -->
+    <div class="container text-center mt-5">
+        <a href="index.html" class="btn btn-secondary">Voltar à Página Principal</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            <span style="color: white;">© 2024 Livraria Online</span>:
+            <a class="text-white" href="#">livraria.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

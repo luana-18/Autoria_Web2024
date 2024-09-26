@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #D7CCC8; /* Bege claro */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar, footer {
+            background-color: #4E342E; /* Marrom escuro */
+        }
+        .navbar-brand, .nav-link, footer a {
+            color: white;
+        }
+        .btn-primary {
+            background-color: #795548; /* Marrom médio */
+            border-color: #795548;
+        }
+        .btn-primary:hover {
+            background-color: #4E342E; /* Marrom escuro */
+            border-color: #4E342E;
+        }
+        .btn-secondary {
+            background-color: #4E342E; /* Marrom escuro */
+            border-color: #4E342E;
+        }
+        .card {
+            background-color: #FFF;
+            border-color: #795548; /* Marrom médio */
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Livraria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="livros.html">Livros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Seção de Livros -->
+        <section id="livros" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Livros em Destaque</h2>
+                <div class="row mt-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="sobrinh do mago.jpg" class="card-img-top" alt="Livro 1">
+                            <div class="card-body">
+                                <h5 class="card-title">O Sobrinho do Mago</h5>
+                                <p class="card-text">Digory e Polly encontram anéis mágicos e testemunham a criação de Nárnia pelo Grande Leão Aslan. Em suas aventuras, enfrentam uma feiticeira maligna e ajudam a moldar o destino deste novo mundo encantado..</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro1">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="leao feiticeira e o guarda roupa.jpg" class="card-img-top" alt="Livro 2">
+                            <div class="card-body">
+                                <h5 class="card-title">O Leão, a Feiticeira e o Guarda-roupa</h5>
+                                <p class="card-text">Quatro irmãos descobrem um guarda-roupa mágico que os transporta para Nárnia, um mundo encantado dominado pela Feiticeira Branca. Juntos com o Grande Leão Aslan, eles lutam para libertar Nárnia da tirania da feiticeira e restaurar a paz ao reino.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro2">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="cavalo e seu menino.jpg" class="card-img-top" alt="Livro 3">
+                            <div class="card-body">
+                                <h5 class="card-title">O Cavalo e seu Menino</h5>
+                                <p class="card-text"> Shasta e o cavalo Bree fogem de Calormen em busca de liberdade em Nárnia. Durante a jornada, enfrentam perigos e descobrem segredos sobre seus passados e o destino de Nárnia.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro3">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="principe caspian.jpg" class="card-img-top" alt="Livro 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Príncipe Caspian</h5>
+                                <p class="card-text">Os irmãos Pevensie retornam a Nárnia e descobrem que o reino está sob o domínio dos Telmarinos. Eles ajudam o príncipe Caspian a reivindicar seu trono e restaurar a paz e a magia ao reino.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro4">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="cadeira de prata.jpg" class="card-img-top" alt="Livro 5">
+                            <div class="card-body">
+                                <h5 class="card-title">A Cadeira de Prata</h5>
+                                <p class="card-text">Eustáquio e Jill são chamados a Nárnia para resgatar o príncipe Rilian, que foi sequestrado e encantado por uma feiticeira. Com a ajuda de aliados mágicos, eles enfrentam perigos e desafios para quebrar o feitiço e salvar o príncipe.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro5">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="a ultima batalha.jpg" class="card-img-top" alt="Livro 6">
+                            <div class="card-body">
+                                <h5 class="card-title">A Última Batalha</h5>
+                                <p class="card-text">Nárnia enfrenta sua batalha final contra forças do mal e a traição. Com a ajuda dos amigos de sempre e novos aliados, Aslan e os Pevensie lutam para salvar o reino e trazer um novo começo para Nárnia.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro6">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-lg-start mt-auto">
+        <div class="text-center p-3">
+            <span style="color: white;">© 2024 Livraria Online</span>:
+            <a class="text-white" href="#">livraria.com</a>
+        </div>
+    </footer>
+
+    <!-- Modais -->
+    <!-- Modal Livro 1 -->
+    <div class="modal fade" id="modalLivro1" tabindex="-1" aria-labelledby="modalLivro1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro1Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><p><strong>Autor:</strong> C.S. Lewis</p>
+                    <p><strong>Publicado:</strong> 1955</p>
+                    <p><strong>Número de Páginas:</strong> Aproximadamente 200</p>
+                    <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                    <p><strong>Sinopse:</strong> Explora a criação do mundo de Nárnia, introduzindo personagens como Digory Kirke e Polly Plummer, e a origem do Grande Leão Aslan e da Feiticeira Branca.</p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Livro 2 -->
+    <div class="modal fade" id="modalLivro2" tabindex="-1" aria-labelledby="modalLivro2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro2Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Autor:</strong> C.S. Lewis</p>
+                  <p><strong>Publicado:</strong> 1950</p>
+                  <p><strong>Número de Páginas:</strong> Aproximadamente 220</p>
+                  <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                  <p><strong>Sinopse:</strong> Narra a chegada dos irmãos Pevensie a Nárnia, sua luta contra a Feiticeira Branca e a restauração da paz com a ajuda de Aslan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Livro 3 -->
+    <div class="modal fade" id="modalLivro3" tabindex="-1" aria-labelledby="modalLivro3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro3Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Autor:</strong> C.S. Lewis</p>
+                  <p><strong>Publicado:</strong> 1954</p>
+                  <p><strong>Número de Páginas:</strong> Aproximadamente 200</p>
+                  <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                  <p><strong>Sinopse:</strong> Segue a jornada de Shasta e Bree, que fogem de Calormen para Nárnia e enfrentam uma série de desafios enquanto descobrem seus passados.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Livro 4 -->
+    <div class="modal fade" id="modalLivro4" tabindex="-1" aria-labelledby="modalLivro4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro4Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Autor:</strong> C.S. Lewis</p>
+                  <p><strong>Publicado:</strong> 1951</p>
+                  <p><strong>Número de Páginas:</strong> Aproximadamente 220</p>
+                  <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                  <p><strong>Sinopse:</strong> Os irmãos Pevensie retornam a Nárnia e ajudam o Príncipe Caspian a recuperar seu trono dos Telmarinos e restaurar a magia ao reino.</p>
+              </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Livro 5 -->
+    <div class="modal fade" id="modalLivro5" tabindex="-1" aria-labelledby="modalLivro5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro5Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Autor:</strong> C.S. Lewis</p>
+                  <p><strong>Publicado:</strong> 1953</p>
+                  <p><strong>Número de Páginas:</strong> Aproximadamente 230</p>
+                  <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                  <p><strong>Sinopse:</strong> Eustáquio e Jill são enviados para Nárnia para resgatar o Príncipe Rilian, encantado por uma feiticeira, enfrentando desafios e mistérios.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Livro 6 -->
+    <div class="modal fade" id="modalLivro6" tabindex="-1" aria-labelledby="modalLivro6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLivro6Label">Ficha Técnica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Autor:</strong> C.S. Lewis</p>
+                  <p><strong>Publicado:</strong> 1956</p>
+                  <p><strong>Número de Páginas:</strong> Aproximadamente 240</p>
+                  <p><strong>Gênero:</strong> Fantasia, Infantojuvenil</p>
+                  <p><strong>Sinopse:</strong> A batalha final de Nárnia contra o mal e a traição, com Aslan e os Pevensie lutando para salvar o reino e trazer um novo começo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

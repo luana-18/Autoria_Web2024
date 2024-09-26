@@ -1,0 +1,39 @@
+.cabecalho {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    background-color: #d2b48c; /* Fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #5d3a2c; /* Contorno em marrom escuro */
+}
+
+.cabecalho h1 {
+    color: #1b0901; /* Cor marrom para o título */
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+
+.cabecalho img {
+    margin-left: 10px; /* Espaço à esquerda da imagem */
+    width: 90px; /* Largura da imagem */
+    height: 90px; /* Altura da imagem */
+    border-radius: 50px; /* Bordas arredondadas */
+    border: 2px solid #1b0901; /* Contorno em marrom escuro */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff5ba; /* Cor do menu */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #5d3a2c; /* Contorno em marrom escuro */
+}
+
+nav a {
+    color: rgb(0, 0, 0); /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 15px; /* Espaço entre os links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

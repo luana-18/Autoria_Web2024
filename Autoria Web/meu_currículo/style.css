@@ -1,0 +1,88 @@
+.cabecalho {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    background-color: #d2b48c; /* Fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #5d3a2c; /* Contorno em marrom escuro */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cabecalho img {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 80px; /* Bordas arredondadas */
+    border: 2px solid #1b0901; /* Contorno em marrom escuro */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.cabecalho h2 {
+    margin: 0; /* Remove as margens padrão */
+}
+
+.corpo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cabecalho {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    background-color: #d2b48c; /* Fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #5d3a2c; /* Contorno em marrom escuro */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cabecalho img {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 80px; /* Bordas arredondadas */
+    border: 2px solid #1b0901; /* Contorno em marrom escuro */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.cabecalho h2 {
+    margin: 0; /* Remove as margens padrão */
+}
+
+.corpo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+hr {
+    border: 1px solid #5d3a2c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #5d3a2c;
+}
+
+.contato ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contato li {
+    margin-bottom: 10px;
+}
+
+.contato a {
+    color: #5d3a2c;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+    color: #000;
+}
