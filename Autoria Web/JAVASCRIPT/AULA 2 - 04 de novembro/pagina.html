@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+</head>
+
+<body>
+    <h1> Cadastro de Produtos </h1>
+    <hr />
+    <form id="formProduto">
+        <table>
+            <tr>
+                <td>Nome do produto:</td>
+                <td><input type="text" id="nome" /></td>
+            </tr>
+            <tr>
+                <td>Qtd estoque:</td>
+                <td><input type="text" id="qtd" /></td>
+            </tr>
+            <tr>
+                <td>Valor unitário:</td>
+                <td><input type="text" id="valor" /></td>
+            <tr>
+                <td>Fornecedor:</td>
+                <td><input type="text" id="fornecedor" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="gravarProduto()"> Gravar</button>&nbsp;
+                    <button type="reset"> Limpar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr />
+    <h2> Lista de Produtos </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome do Produto</th>
+                <th>Qtd Estoque</th>
+                <th>Valor unitário</th>
+                <th>Fornecedor</th>
+                <th>Excluir</th>
+                <th>Alterar</th>
+            </tr>
+        <tbody id="conteudo" >
+            <tr>
+                <td colspan="7">Nenhum produto cadastrado até o momento</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="funcoes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <h1>Exercício 03 - Controle de notas</h1>
+    <hr />
+    <form>
+        Nota: <input type="number" id="nota" />
+        <button type="button" onclick="adicionarNota()">Adicionar</button>
+        <button type="button" onclick="exibirNotasAcimaMedia(60)">Notas acima da média</button>
+    </form>
+    <p>
+        Média da turma: <span id="media">0</span>
+    </p>
+    <ul id="listagemNotas"></ul>
+    <script src="funcoes.js"></script>
+</body>
+</html>
